@@ -1,0 +1,136 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/****header*****/
+
+header {
+    padding: 20px 0px;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background-color: #000000;
+    top: 0;
+    transition: opacity 0.8s ease;
+}
+
+.header-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.menus a {
+    padding: 0;
+}
+
+.menus {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu,
+.menu2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul {
+    padding-left: 150px;
+    list-style: none;
+}
+
+.menu ul li {
+    padding: 0 20px;
+}
+
+.menu2 ul {
+    padding: 0 10px;
+    list-style: none;
+}
+
+.menu2 ul li {
+    padding: 0 20px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+nav li a {
+    display: flex;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.menu ul li a,
+.menu2 ul li a {
+    cursor: pointer;
+}
+
+.menu ul li a:hover,
+.menu2 ul li a:hover {
+    color: #01edff;
+}
+
+/******menu2 burger*****/
+.menu2 .menu-list {
+    display: none;
+}
+
+.menu2.active .menu-list {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 100%;
+    left: auto;
+    right: 0;
+    padding: 10px 0;
+}
+
+
+.menu2.active .menu-list li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #666;
+}
+
+.menu2 .menu-burger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding-right: 80px;
+}
+
+.burger-line {
+    width: 25px;
+    height: 3px;
+    background-color: #01edff;
+    margin: 3px 0;
+}
+
+
+
+/****logo header****/
+
+nav img {
+    width: 200px;
+    height: 50px;
+    object-position: center;
+}
+
+.menu img {
+    padding-left: 30px;
+}

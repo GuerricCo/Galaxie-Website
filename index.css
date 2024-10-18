@@ -1,0 +1,221 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+.section1 {
+    background-image: url('img/fond1.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+.section2 {
+    background-image: url('img/fond2.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+.section3 {
+    background-image: url('img/fond3.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+.section4 {
+    background-image: url('img/fond4.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+
+
+
+/*****bouton****/
+
+.btn1 {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+
+}
+
+.btn1:hover {
+    background-color: #fff;
+    color: #333;
+    border-color: #333;
+}
+
+
+
+.btn1-container {
+    position: absolute;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    bottom: 50%;
+    left: 10%;
+    width: 450px;
+}
+
+.btn2-container h1,
+.btn3-container h1 {
+    text-align: right;
+}
+
+.btn2-container {
+    position: absolute;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: white;
+    bottom: 40%;
+    right: 5%;
+    width: 500px;
+}
+
+.btn3-container {
+    position: absolute;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: white;
+    bottom: 40%;
+    right: 15%;
+    width: 500px;
+}
+
+.btn4-container {
+    position: absolute;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    bottom: 30%;
+    left: 10%;
+    width: 450px;
+}
+
+.btn1-container h1,
+.btn2-container h1,
+.btn3-container h1,
+.btn4-container h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+
+.btn2 {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+
+.btn2:hover {
+    background-color: #fff;
+    color: #333;
+    border-color: #333;
+}
+
+
+
+.btn3 {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.btn3:hover {
+    background-color: #fff;
+    color: #333;
+    border-color: #333;
+}
+
+
+
+.btn4 {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.btn4:hover {
+    background-color: #fff;
+    color: #333;
+    border-color: #333;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.main_container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.main_container .bandeau {
+    width: calc(100% / 4);
+    height: 100vh;
+    transition: all 1.5s ease;
+    z-index: 1000;
+}
+
+.main_container .bandeau:nth-child(even) {
+    background-color: black;
+}
+
+.main_container .bandeau:nth-child(odd) {
+    background-color: rgb(0, 0, 0);
+}
+
+.section-transition {
+    height: 0;
+    transition: height 0.5s ease;
+    /* Ajustez la durée et la fonction de transition selon vos préférences */
+}

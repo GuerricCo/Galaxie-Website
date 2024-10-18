@@ -1,0 +1,108 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container,
+.container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 50px;
+    opacity: 0;
+    /* Définir l'opacité à 0 pour masquer initialement les conteneurs */
+}
+
+/* Sectors Section */
+.sectors {
+    padding: 50px 0;
+    padding-bottom: 70px;
+}
+
+.sectors h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+.sector {
+    display: flex;
+    margin-bottom: 15px;
+    position: relative;
+    background: linear-gradient(to bottom, #030303, #454545);
+    /* Fond dégradé noir-gris */
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.sector a {
+    width: 100%;
+    text-decoration: none;
+}
+
+.sector img {
+    width: 300px;
+    margin-right: 20px;
+    height: 200px;
+}
+
+.sector h3 {
+    font-size: 24px;
+    width: 200px;
+    color: #ffffff;
+}
+
+.sector p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+/* Animation */
+@keyframes slideFromRight {
+    from {
+        transform: translateX(1000%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromLeft {
+    from {
+        transform: translateX(-1000%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.container {
+    animation: slideFromRight 1.5s ease forwards;
+}
+
+.container2 {
+    animation: slideFromLeft 1.5s ease forwards;
+
+}
+
+
+
+.sector:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
